@@ -2,7 +2,7 @@
 This is a jumble of code designed to test the pyrtl-based CPU for CS154's lab3.
 
 ### Usage
-Build any MIPS ASM testing scripts in the ASM_test_scripts folder. Make sure that:
+First code up any MIPS ASM testing scripts in the ASM_test_scripts folder. Make sure that:
 - `add, and, addi, lui, ori, slt, lw, sw, beq` are the only instructions used.
 - Ensure that an `exit:` label exists with no instructions after, and when you want to exit the program use the instruction `beq $zero, $zero, exit`. This is effectively the same as a syscall, and just tells the compiler/interpreter to loop infinitely or exit, respectively.
 Then move/copy your python lab file (___must___ be named `ucsbcs154lab3_cpu.py`, as was downloaded) into the same folder.
