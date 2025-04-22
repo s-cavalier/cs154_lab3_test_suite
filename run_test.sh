@@ -7,4 +7,6 @@ TMP_DIR="interpret_tmp"
     make
 )
 
+mkdir -p $TMP_DIR
+
 interpreter/mipsinterpret $1 $TMP_DIR/asmexe.mips $TMP_DIR/asmmem.mips lab3_test.py
