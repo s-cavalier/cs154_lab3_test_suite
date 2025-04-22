@@ -15,4 +15,4 @@ Then run `./run_test.sh <script>`, and the compiled instructions will be in `int
 You can also if you want fiddle with the source code or just compile/use the MIPS interpreter in the `interpreter` folder. Just run `make` and then the formatting is `./mipsinterpret <MIPS src> <compile output> <memory output> <lab3_test.py file>`.
 
 ### Trustability
-The compiler comes with 11 different tests in the ASM_test_scripts folder that I have checked and all seem to correctly function. If there are any issues, feel free to mention them.
+This repo already has 11 different tests in the ASM_test_scripts folder that I have checked and all seem to correctly function. If there are any issues, feel free to mention them.
