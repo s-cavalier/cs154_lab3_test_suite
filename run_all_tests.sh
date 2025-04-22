@@ -10,6 +10,8 @@ SCRIPT_DIR="ASM_test_scripts"
 TMP_DIR="interpret_tmp"
 ALL_PASSED=true
 
+mkdir -p $TMP_DIR
+
 for file in "$SCRIPT_DIR"/*.asm; do
     if [[ -f "$file" ]]; then
         echo "Running: ./interpreter/mipsinterpret $file $TMP_DIR/asmexe.mips $TMP_DIR/asmmem.mips lab3_test.py"
