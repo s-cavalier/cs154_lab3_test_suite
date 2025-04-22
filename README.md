@@ -11,8 +11,11 @@ It will compare the final memory values (`d_mem` and `rf`) of the CPU developed 
 If any do not pass and you want to test a single file, run `chmod +x run_test.sh` once to make `run_test.sh` an executable.
 Then run `./run_test.sh <script>`, and the compiled instructions will be in `interpret_tmp/asmexe.mips` and the final memory values of the interpreter will be in `interpret_tmp/asmmem.mips` to compare with the final values in your pyrtl CPU.
 
-### Using the interpreter
+### Using the hand-rolled interpreter/compiler
 You can also if you want fiddle with the source code or just compile/use the MIPS interpreter in the `interpreter` folder. Just run `make` and then the formatting is `./mipsinterpret <MIPS src> <compile output> <memory output> <lab3_test.py file>`.
 
+### Operating System Dependencies
+Assuming you have C++ and Python downloaded, the `lab3_test.py` and interpreter/compiler should both work just fine, but the shell scripts may have issues on Windows specifically since Windows doesn't natively have a way to run them, but you *should* be able to run them with Git Bash, Cygwin, or MinGW, which may have come with g++ if you have C++ installed.
+
 ### Trustability
-This repo already has 11 different tests in the ASM_test_scripts folder that I have checked and all seem to correctly function. If there are any issues, feel free to mention them.
+This repo already has 11 different tests in the ASM_test_scripts folder that I have checked and all seem to correctly function when run with the hand-rolled interpreter/compiler. If there are any issues, feel free to mention them.
