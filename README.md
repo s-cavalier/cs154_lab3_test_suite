@@ -16,4 +16,4 @@ You can also if you want fiddle with the source code or just compile/use the MIP
 Assuming you have C++ and Python downloaded, the `lab3_test.py` and interpreter/compiler should both work just fine, but the shell scripts may have issues on Windows specifically since Windows doesn't natively have a way to run them, but you *should* be able to run them with Git Bash, Cygwin, or MinGW, which may have come with g++ if you have C++ installed.
 
 ### Trustability
-This repo already has 11 different tests in the ASM_test_scripts folder that I have checked and all seem to correctly function when run with the hand-rolled interpreter/compiler. If there are any issues, feel free to mention them.
+This repo already has 11 different tests in the ASM_test_scripts folder that I have checked and all correctly function when run with the hand-rolled interpreter/compiler. If there are any issues, feel free to mention them.
