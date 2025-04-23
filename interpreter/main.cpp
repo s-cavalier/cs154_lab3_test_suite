@@ -101,6 +101,9 @@ int main(int argc, char** argv) {
     output_file << setw(8) << setfill('0') << Parser::instr_to_hex(extra_instruction, label_table, tmp_pc);
 
     cout << argv[1] << " fully compiled to " << argv[2] << ". Switching to interpreter..." << endl;
+
+    assert(label_table.count("main"), "No main label found.");
+    mem.pc = label_table["main"];
     
     while (!mem.exit_flag) {
         mem.i_mem.at(mem.pc).compiled(mem);
